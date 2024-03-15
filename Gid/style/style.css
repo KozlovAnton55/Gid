@@ -1,0 +1,617 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+	height: 100%;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* reset.css*/
+
+/* Шрифты */
+
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/lato-v24-latin-ext-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-700 - latin-ext */
+  @font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/lato-v24-latin-ext-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-900 - latin-ext */
+  @font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 900;
+	src: url('../fonts/lato-v24-latin-ext-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+/* Шрифты */
+
+/* Общие стили для шрифтов*/
+
+body {
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: normal;
+    color: #102746;
+}
+
+/* Общие стили для шрифтов*/
+
+/* Общие стили для изображений */
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Общие стили для изображений */
+
+/* Паддинги не меняющие размер блока */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Паддинги не меняющие размер блока */
+
+/* Header */
+
+.header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 89;
+}
+
+.wrapper {
+	max-width: 1060px;
+	margin: 0 auto;
+}
+
+.header_logo_nav_menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 36px;
+}
+
+.nav_menu {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: end;
+}
+
+.scrollto {
+	margin-left: 82px;
+	font-size: 18px;
+	text-decoration: none;
+    color: #FFFFFF;
+}
+
+.scrollto:hover, .scrollto:focus, .scrollto:active {
+	opacity: .75;
+}
+
+/* Header */
+
+/* secion main_page */
+
+.main_page {
+	min-height: 100vh;
+	background: url(../images/background.jpg) no-repeat center;
+	background-size: cover;
+	padding-bottom: 180px;
+}
+
+.heading_main_page {
+    font-size: 50px;
+	font-weight: 500px;
+	color: #FFFFFF;
+	max-width: 650px;
+	line-height: 60px;
+	padding-top: 150px;
+	margin-bottom: 22px;
+}
+
+.text_main_page {
+	color: #FFFFFF;
+	max-width: 546px;
+	line-height: 24px;
+	margin-bottom: 60px;
+}
+/* secion main_page */
+
+/* section main_page_form */
+
+.grup {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.search_form {
+	width: 297px;
+	background: transparent url(../images/icons/Oval.svg) no-repeat left top;
+	background-size: 20px;
+	border: 0px;
+	outline: none;
+	border-bottom: 2px solid #BFC0C5;
+	margin-right: 60px;
+	padding-left: 43px;
+	padding-bottom: 22px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #FFFFFF;
+}
+
+.search_form::placeholder {
+	font-size: 18px;
+	font-weight: 500;
+	color: #FFFFFF;
+	opacity: .4;
+}
+
+.enter {
+	padding: 15px 40px;
+	background-color: #1B7DFF;
+	font-size: 24px;
+	font-weight: 500;
+	color: #FFFFFF;
+	border: 0px;
+}
+
+.enter:hover, .enter:focus, .enter:active {
+	background: #153c72;
+}
+
+/* section main_page_form */
+
+/* section odigo */
+
+.wrapper_odigo {
+	max-width: 1262px;
+	margin: 0 auto;
+	padding: 70px 70px;
+	background-color: #FFFFFF;
+	transform: translateY(-20%);
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.13), -10px -41px 7px rgba(0, 0, 0, 0);
+}
+
+.heading_odigo {
+	font-size: 35px;
+	font-weight: 700;
+	margin-bottom: 120px;
+}
+
+.odigo_box {
+	display: flex;
+	justify-content: space-between;
+}
+
+.box_1,
+.box_2,
+.box_3 {
+	margin-bottom: 120px;
+	margin: 10px;
+}
+
+.icon_1,
+.icon_2,
+.icon_3 {
+	margin-bottom: 37px;
+}
+
+.heading_box_1,
+.heading_box_2,
+.heading_box_3 {
+	margin-bottom: 26px;
+	font-size: 18px;
+	font-weight: 700;	
+}
+
+.text_1,
+.text_2,
+.text_3 {
+	margin-bottom: 39px;
+	line-height: 1.4;
+}
+
+.bottom_text_1,
+.bottom_text_2,
+.bottom_text_3 {
+	margin-right: 25px;
+	color: #006DFE;
+	text-decoration: none;
+}
+
+.odigo_box {
+    display: flex;
+	justify-content: space-around;
+}
+/* section odigo*/
+
+/* section inspired */
+
+.wrapper_inspired {
+	max-width: 1262px;
+	margin: 0 auto;
+    margin-bottom: 130px;
+}
+
+.view_head {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.heading_inspired {
+	font-size: 35px;
+	font-weight: 700;
+	margin-bottom: 60px;
+	width: 500px;
+	line-height: 120%;
+}
+
+.fujito_kyoto {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.fuji {
+	position: relative;
+}
+
+.heading_fuji {
+	position: absolute;
+	color: #FFFFFF;
+	font-size: 30px;
+	font-weight: 900;
+	bottom: 20px;
+	left: 10px;
+
+}
+
+.kyoto {
+	position: relative;
+}
+
+.heading_kyoto {
+	position: absolute;
+	color: #FFFFFF;
+	font-size: 30px ;
+	font-weight: 900;
+	bottom: 20px;
+	left: 10px;
+}
+
+.tok_nig_sap {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.tokyo {
+	position: relative;
+}
+
+.heading_tokyo {
+    position: absolute;
+	color: #FFFFFF;
+	font-size: 30px ;
+	font-weight: 900;
+	bottom: 20px;
+	left: 10px;
+}
+
+.niigata {
+	position: relative;
+}
+
+.heading_niigata {
+    position: absolute;
+	color: #FFFFFF;
+	font-size: 30px ;
+	font-weight: 900;
+	bottom: 20px;
+	left: 10px;
+}
+
+.sapporo {
+	position: relative;
+}
+
+.heading_sapporo {
+    position: absolute;
+	color: #FFFFFF;
+	font-size: 30px ;
+	font-weight: 900;
+	bottom: 20px;
+	left: 10px;
+}
+
+/* section inspired */
+
+/* section visit */
+
+.wrapper_visit {
+	max-width: 1262px;
+	margin: 0 auto;
+    margin-bottom: 120px;
+}
+
+.tottori {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: start;
+}
+
+.img_tottori {
+    margin-bottom: 103px;
+}
+
+.heading_tottori {
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 60px;
+	line-height: 120%;
+	max-width: 400px;
+}
+
+.text_tottori {
+	margin-right: 45px;
+}
+
+.text_tott{
+	margin-bottom: 100px;
+	max-width: 510px;
+}
+
+.arashiyama {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+
+
+.text_arashiyama {
+	margin-left: 47px;
+	max-width: 510px;
+}
+
+.heading_arashiyama {
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 45px;
+	line-height: 120%;
+	max-width: 400px;
+}
+
+.text_aras {
+	margin-bottom: 94px;
+}
+
+/* section visit */
+
+/* section today */
+
+.wrapper_today {
+	max-width: 1262px;
+	margin: 0 auto;
+	margin-bottom: 140px;
+}
+
+
+
+.heading_today {
+	font-size: 35px;
+	font-weight: 700;
+	margin-bottom: 60px;
+	max-width: 500px;
+	line-height: 120%;
+}
+
+.text_card {
+	max-width: 390px;
+	margin-bottom: 30px;
+}
+
+.cards_today_head {
+    display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 40px;
+	margin-bottom: 40px;
+}
+
+.img_card_1 {
+	height: 377px;
+	background: url(../images/nagoya.jpg) no-repeat center;
+	position: relative;
+	margin-bottom: 45px;
+}
+
+.img_card_2 {
+	height: 377px;
+	background: url(../images/nigata.jpg) no-repeat center;
+	position: relative;
+	margin-bottom: 45px;
+}
+
+.img_card_3 {
+	height: 377px;
+	background: url(../images/osaka.jpg) no-repeat center;
+	position: relative;
+	margin-bottom: 45px;
+}
+
+.info_card {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 340px;
+}
+
+.heding_card {
+	font-size: 18px;
+	font-weight: 500;
+	color: #FFFFFF;
+	margin-left: 25px;
+}
+
+.coments {
+	margin-right: 25px;
+}
+
+.likes {
+	margin-right: 10px;
+}
+
+.cards_today_bott {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 40px;
+}
+
+.img_card_4 {
+	height: 377px;
+	background: url(../images/saytama.jpg) no-repeat center;
+	position: relative;
+	margin-bottom: 45px;
+}
+
+.img_card_5 {
+	height: 377px;
+	background: url(../images/ueno.jpg) no-repeat center;
+	position: relative;
+	margin-bottom: 45px;
+}
+
+.img_card_6 {
+	height: 377px;
+	background: url(../images/shibuya.jpg) no-repeat center;
+	position: relative;
+	margin-bottom: 45px;
+}
+
+/* section today */
+
+/* section video */
+
+.video {
+	max-width: 100%;
+	height: 800px;
+	position: relative;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.video_play,
+.video_poster {
+	-o-object-fit: cover;
+	object-fit: cover;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+/* section video */
+
+/* section footer */
+
+.footer {
+	max-width: 100%;
+	height: 370px;
+	background-color: #0E1D28;
+}
+
+.wrapper_footer {
+	max-width: 1060px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 120px;
+}
+
+.footer_nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav_1,
+.nav_2,
+.nav_3 {
+	color: #FFFFFF;
+	margin-right: 50px;
+	line-height: 140%;
+}
+
+.heading_list {
+	margin-left: 80px;
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	max-width: 100px;
+}
+
+/* section footer */
