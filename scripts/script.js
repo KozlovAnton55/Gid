@@ -38,12 +38,20 @@ for (let anchor of anchors) {
     const burgerItem = document.querySelector('.burger');
     const menu = document.querySelector('.nav_menu_list');
     const menuCloseItem = document.querySelector('.nav_close');
+    const menuLinks = document.querySelectorAll('.scrollto');
     burgerItem.addEventListener('click', () => {
         menu.classList.add('nav_menu_list_active');
     });
     menuCloseItem.addEventListener('click', () => {
         menu.classList.remove('nav_menu_list_active');
     });
+    if (window.innerWidth <= 780) {
+        for (let i = 0; i < menuLinks.length; i += 1) {
+            menuLinks[i].addEventListener('click', () => {
+                menu.classList.remove('nav_menu_list_active');
+            });
+        }
+    }
 }());
 
 // Бургер меню 

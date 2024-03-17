@@ -294,9 +294,12 @@ html {
 }
 
 .icon_1,
-.icon_2,
-.icon_3 {
+.icon_2 {
 	margin-bottom: 37px;
+}
+
+.icon_3 {
+    margin-bottom: 44px;
 }
 
 .heading_box_1,
@@ -341,7 +344,7 @@ html {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	align-items: center;
+	align-items: end;
 }
 
 .heading_inspired {
@@ -724,11 +727,95 @@ html {
 
 /* section footer */
 
+/* Медиа запрос для разрешения от 1050px */
+
+@media screen and (max-width: 1050px) {
+
+.wrapper {
+	padding: 0px 20px;
+}
+
+
+
+.heading_odigo {
+	margin-bottom: 80px;
+}
+
+.wrapper_inspired {
+	padding: 0px 20px;
+}
+
+.heading_inspired{
+	margin: 0;
+}
+
+.view_head {
+	margin-bottom: 40px;
+}
+
+.wrapper_visit {
+	padding: 0px 20px;
+}
+
+.text_tottori {
+	max-width: 300px;
+}
+
+.heading_tottori {
+	margin-bottom: 30px;
+}
+
+.text_tott {
+	margin-bottom: 30px;
+}
+
+.text_arashiyama {
+	max-width: 300px;
+} 
+
+.heading_arashiyama {
+	margin-bottom: 30px;
+}
+
+.text_aras {
+	margin-bottom: 30px;
+}
+
+.wrapper_today {
+	padding: 0px 20px;
+}
+
+.wrapper_today {
+	margin-bottom: 50px;
+}
+
+.wrapper_footer {
+	padding: 100px 20px;
+}
+
+.video {
+	max-height: 100vh;
+}
+
+.footer_nav {
+	margin-bottom: 100px;
+}
+
+}
+
+/* Медиа запрос для разрешения от 1050px */
+
 /* Медиа запрос для разрешения от 780px */
 
 @media screen and (max-width: 780px) {
 .nav_burger {
 	display: block;
+}
+
+.wrapper_odigo {
+	transform: translateY(-10%);
+	box-shadow: none;
+	padding-bottom: 30px;
 }
 
 .nav_menu_list {
@@ -789,6 +876,311 @@ html {
 	transform: translateY(-50%) rotate(-45deg);
 }
 
+.header_logo_nav_menu {
+	margin-top: 0;
+}
+
+.heading_main_page {
+	margin-bottom: 40px;
+}
+
+.enter, .search_form {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.search_form {
+	margin-bottom: 30px;
+}
+
+.enter {
+	padding: 20px 60px;
+}
+
+.heading_main_page {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.text_main_page {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.wrapper_inspired {
+	margin-bottom: 70px;
+}
+
+.heading_fuji,
+.heading_kyoto,
+.heading_tokyo,
+.heading_niigata,
+.heading_sapporo {
+	font-size: 25px;
+	font-weight: 900;
+	bottom: 10px;
+	left: 5px;
+}
+
+.wrapper_visit {
+	margin-bottom: 0;
+}
+
+.tottori {
+	flex-wrap: wrap;
+}
+
+.img_tottori {
+	width: 100%;
+    order: 2;
+	margin-bottom: 40px;
+}
+
+.text_tottori {
+    order: 1;
+	margin-bottom: 30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.heading_tottori {
+	max-width: 800px;
+}
+
+.arashiyama {
+	flex-wrap: wrap;
+}
+
+.text_arashiyama {
+    margin-left: 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.img_arashiyama {
+	width: 100%;
+	margin-bottom: 70px;
+}
+
+.text_aras {
+	max-width: 100%;
+}
+
+.cards_today_head {
+	gap: 15px;
+	margin-bottom: 15px;
+}
+
+.heding_card {
+	font-size: 14px;
+	margin-left: 10px;
+}
+
+.coments {
+    margin-right: 10px;
+}
+
+.cards_today_bott {
+	gap: 15px;
+}
+
+.see {
+	width: 100%;
+}
+
+.nav_1,
+.nav_2,
+.nav_3 {
+	margin-right: 40px;
+}
+
+
+
 }
 
 /* Медиа запрос для разрешения от 780px */
+
+/* Медиа запрос для разрешения от 450px */
+
+@media screen and (max-width: 450px) {
+
+.search_form {
+	margin-bottom: 40px;
+}
+
+.enter {
+	width: 297px;
+	margin-top: 20px;
+}
+
+.wrapper_odigo {
+	transform: translateY(-5%);
+	padding-bottom: 0;
+	box-shadow: none;
+}
+
+.odigo_box {
+	flex-wrap: wrap;
+}
+
+.heading_odigo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	line-height: 120%;
+	margin-bottom: 40px;
+}
+
+.box_1,
+.box_2,
+.box_3 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.text_1,
+.text_2,
+.text_3 {
+     margin-bottom: 10px;
+}
+
+.bottom_text {
+	margin-bottom: 30px;
+}
+
+.heading_inspired {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.view_head {
+	margin-bottom: 0;
+}
+
+.viev {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+}
+
+.fujito_kyoto {
+	flex-wrap: wrap;
+}
+
+.tok_nig_sap {
+	flex-wrap: wrap;
+}
+
+.wrapper_inspired {
+	margin-bottom: 40px;
+}
+
+.img_arashiyama {
+	margin-bottom: 40px;
+}
+
+.heading_today {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.cards_today_head {
+	flex-wrap: wrap;
+}
+
+.cards_today_bott {
+	flex-wrap: wrap;
+}
+
+.img_card_1,
+.img_card_2,
+.img_card_3,
+.img_card_4,
+.img_card_5,
+.img_card_6 {
+	margin-bottom: 20px;
+}
+
+.text_card {
+	margin-bottom: 20px;
+}
+
+.see {
+	margin-bottom: 30px;
+}
+
+.video_play {
+	height: 100vh;
+}
+
+.footer {
+	position: relative;
+}
+
+.footer_logo {
+	display: block;
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	margin-left: auto;
+    margin-right: auto;
+	left: 0;
+    right: 0;
+	text-align: center;
+}
+
+.nav_foot_1 {
+	position: absolute;
+	left: 20px;
+	text-align: center;
+	top: 110px;
+}
+
+.nav_foot_2 {
+	position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+	left: 0;
+    right: 0;
+	text-align: center;
+	top: 110px;
+}
+
+.heading_list {
+	margin-left: auto;
+    margin-right: auto;
+	left: 0;
+    right: 0;
+	text-align: center;
+}
+
+.nav_foot_3 {
+	position: absolute;
+	right: 20px;
+	text-align: center;
+	top: 110px;
+}
+
+}
+
+/* Медиа запрос для разрешения от 450px */
